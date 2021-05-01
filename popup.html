@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social-Media Links</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+        html,
+        body {
+            font-family: 'Open Sans', 'sans-serif';
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+            min-height: 180px;
+            width: 450px;
+        }
+
+        h1 {
+            font-family: 'Menlo'monospace;
+            font-size: 22px;
+            font-weight: 200;
+            margin: 0;
+            color: #2f5876;
+        }
+
+        a:link,
+        a:visited {
+            color: black;
+            text-decoration: none;
+            outline: 0;
+        }
+
+        img {
+            width: 30px;
+        }
+
+        .modal-header {
+            align-items: center;
+            border-bottom: 0.5px solid #dadada;
+        }
+
+        .modal-content {
+            padding: 0 22px;
+            text-align: center;
+        }
+
+        .modal-icons {
+            border-top: 0.5px solid #dadada;
+            height: 50px;
+            width: 100%;
+        }
+
+        .logo {
+            padding: 16px;
+
+        }
+
+        .logo-icon {
+            vertical-align: text-bottom;
+            margin-right: 12px;
+        }
+
+        .version {
+            color: #444;
+            font-size: 18px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 22px;
+        }
+
+        .flex {
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 120px;
+        }
+
+        .flex-hover {
+            opacity: 0.4;
+        }
+
+        .flex .fa {
+            font-size: 40px;
+            color: #2f5876;
+        }
+
+        .flex .fab {
+            font-size: 40px;
+            color: #2f5876;
+        }
+
+        .customise-btn {
+            padding: 2px;
+            background-color: white;
+            color: #2f5876;
+            border: 2px solid #2f5876;
+            border-radius: 20px;
+            margin: 10px;
+            min-width: 150px;
+        }
+        input{
+            min-width: 250px;
+            border: 2px solid #2f5876;
+            border-radius: 20px;
+        }
+        input:focus{
+            min-width: 250px;
+            border: 2px solid #2f5876;
+            border-radius: 20px;
+        }
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img class="logo-icon" src="./icon.jpg" alt="logo"> Social-Links Launcher
+            <span class="version">(1.0.0)</span>
+        </h1>
+    </div>
+    <div class="modal-content">
+        <p>Easily access your social media content!</p>
+        <div class="modal-icons">
+            <div class="flex-container">
+                <div class="flex">
+                    <a href="https://nishihere19.netlify.app/" target="_blank" id="web-link">
+                        <i class="fa fa-globe"></i>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="https://www.youtube.com/channel/UC9rdVtV-oUFnG9HisBChfgw" target="_blank" id="yt-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="https://www.linkedin.com/in/nishihere19/" target="_blank" id="LinkedIn-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="https://www.facebook.com/nishi.agrawal.75470316/" target="_blank" id="fb-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="https://twitter.com/Nishiagr2000" target="_blank" id="twitter-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="https://github.com/nishihere19" target="_blank" id="git-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="https://www.instagram.com/simply_silent_19/" target="_blank" id="insta-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="https://medium.com/@nishiagr19" target="_blank" id="medium-link">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <button class="customise-btn" id="customise-btn">Click here to customise links</button>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <label for="web">Website</label><br>
+                <input type=text class="link-input" name="web" id="web"><br>
+                <label for="yt">Youtube</label><br>
+                <input type=text class="link-input" name="yt" id="yt"><br>
+                <label for="LinkedIn">LinkedIn</label><br>
+                <input type=text class="link-input" name="LinkedIn" id="LinkedIn"><br>
+                <label for="fb">Facebook</label><br>
+                <input type=text class="link-input" name="fb" id="fb"><br>
+                <label for="twitter">Twitter</label><br>
+                <input type=text class="link-input" name="twitter" id="twitter"><br>
+                <label for="git">Github</label><br>
+                <input type=text class="link-input" name="git" id="git"><br>
+                <label for="insta">Instagram</label><br>
+                <input type=text class="link-input" name="insta" id="insta"><br>
+                <label for="medium">Medium</label><br>
+                <input type=text class="link-input" name="medium" id="medium"><br>
+                <button class="customise-btn" id="save">Save</button>
+                <button class="customise-btn" id="close">Cancel</button>
+            </div>
+        </div>
+        <script src="popup.js"></script>
+</body>
+
+</html>
